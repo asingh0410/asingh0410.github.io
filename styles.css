@@ -1,24 +1,57 @@
 /* ==============================================
    MODERN PORTFOLIO DESIGN - CARD LAYOUT & TYPOGRAPHY
    ============================================== */
-
 /* === RESET & FOUNDATION === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: #1a202c;
   background-color: #f7fafc;
+}
+
+/* === PROFILE PHOTO HEADER SECTION === */
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #667eea;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile-header h1 {
+  margin: 0;
+  color: #1a202c;
+  font-size: 2.5rem;
+  font-family: 'Merriweather', Georgia, serif;
+}
+
+.profile-header h3 {
+  margin: 0.5rem 0 0 0;
+  color: #667eea;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
 }
 
 /* === IMPROVED TYPOGRAPHY HIERARCHY === */
@@ -29,58 +62,48 @@ h1, h2, h3, h4, h5, h6 {
   color: #1a202c;
   margin-bottom: 1.5rem;
 }
-
 h1 {
   font-size: 3rem;
   letter-spacing: -0.02em;
 }
-
 h2 {
   font-size: 2.25rem;
   letter-spacing: -0.01em;
   margin-bottom: 1rem;
 }
-
 h3 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
-
 h4 {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
 }
-
 p {
   margin-bottom: 1.5rem;
   line-height: 1.8;
 }
-
 .subtitle {
   font-size: 1.125rem;
   color: #718096;
   margin-top: -0.75rem;
   margin-bottom: 3rem;
 }
-
 /* === LAYOUT CONTAINERS (MORE WHITE SPACE) === */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
-
 .section {
   padding: 5rem 0;
 }
-
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
   gap: 2.5rem;
 }
-
 /* === CARD STYLES (KEY IMPROVEMENT) === */
 .card {
   background: #ffffff;
@@ -89,25 +112,20 @@ p {
   padding: 2rem;
   transition: all 0.3s ease;
 }
-
 .card:hover {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.08);
   transform: translateY(-4px);
 }
-
 .card.padded {
   padding: 3rem;
 }
-
 .card h2 {
   margin-top: 0;
 }
-
 .card h3 {
   margin-top: 0;
   color: #2d3748;
 }
-
 /* === NAVIGATION === */
 .navbar {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -118,7 +136,6 @@ p {
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
-
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -127,30 +144,25 @@ p {
   justify-content: space-between;
   align-items: center;
 }
-
 .nav-logo {
   font-size: 1.5rem;
   font-weight: 700;
   font-family: 'Merriweather', serif;
 }
-
 .nav-menu {
   display: flex;
   gap: 2rem;
   list-style: none;
 }
-
 .nav-menu a {
   color: white;
   text-decoration: none;
   font-weight: 500;
   transition: opacity 0.2s;
 }
-
 .nav-menu a:hover {
   opacity: 0.8;
 }
-
 /* === HERO SECTION WITH PROFILE CARD === */
 .hero {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -158,7 +170,6 @@ p {
   padding: 6rem 0 8rem;
   text-align: center;
 }
-
 .profile-card {
   max-width: 900px;
   margin: 0 auto;
@@ -168,7 +179,6 @@ p {
   gap: 2rem;
   text-align: center;
 }
-
 .profile-photo {
   width: 180px;
   height: 180px;
@@ -177,20 +187,17 @@ p {
   border: 6px solid white;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
 .profile-meta h1 {
   color: white;
   margin-top: 1.5rem;
   font-size: 2.5rem;
 }
-
 .subheadline {
   font-size: 1.25rem;
   font-weight: 300;
   opacity: 0.95;
   margin-bottom: 1.5rem;
 }
-
 .intro {
   font-size: 1.125rem;
   line-height: 1.8;
@@ -198,7 +205,6 @@ p {
   max-width: 700px;
   margin: 0 auto 2rem;
 }
-
 /* === CALL-TO-ACTION BUTTONS (KEY IMPROVEMENT) === */
 .cta-group {
   display: flex;
@@ -207,7 +213,6 @@ p {
   flex-wrap: wrap;
   margin: 2rem 0;
 }
-
 .btn {
   display: inline-block;
   padding: 0.875rem 2rem;
@@ -219,42 +224,35 @@ p {
   border: 2px solid transparent;
   font-size: 1rem;
 }
-
 .btn.primary {
   background: #fbbf24;
   color: #1a202c;
   border-color: #fbbf24;
 }
-
 .btn.primary:hover {
   background: #f59e0b;
   border-color: #f59e0b;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(251, 191, 36, 0.4);
 }
-
 .btn.outline {
   background: transparent;
   color: white;
   border-color: white;
 }
-
 .btn.outline:hover {
   background: white;
   color: #667eea;
 }
-
 .btn:not(.primary):not(.outline) {
   background: white;
   color: #667eea;
 }
-
 .btn:not(.primary):not(.outline):hover {
   background: #f7fafc;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-
 /* === QUICK STATS === */
 .quick-stats {
   display: flex;
@@ -264,65 +262,54 @@ p {
   margin-top: 3rem;
   flex-wrap: wrap;
 }
-
 .quick-stats li {
   text-align: center;
   font-size: 0.9rem;
   opacity: 0.95;
 }
-
 .quick-stats span {
   display: block;
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.25rem;
 }
-
 /* === SKILLS GRID === */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
-
 .skills-grid ul {
   list-style: none;
   padding-left: 0;
 }
-
 .skills-grid li {
   padding: 0.5rem 0;
   border-bottom: 1px solid #e2e8f0;
 }
-
 .skills-grid li:last-child {
   border-bottom: none;
 }
-
 /* === PROJECT CARDS (HIGHLIGHTED) === */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 2.5rem;
 }
-
 .project.card {
   padding: 2.5rem;
 }
-
 .project h3 {
   color: #2d3748;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-
 .tags {
   font-size: 0.875rem;
   color: #667eea;
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
-
 .project .stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -333,79 +320,65 @@ p {
   background: #f7fafc;
   border-radius: 8px;
 }
-
 .project .stats li {
   font-size: 0.9rem;
   color: #4a5568;
   font-weight: 500;
 }
-
 /* === TIMELINE MINI CARDS === */
 .timeline-minicards {
   display: grid;
   gap: 1rem;
   margin-top: 2rem;
 }
-
 .mini.card {
   padding: 1.25rem;
   border-left: 4px solid #667eea;
   background: #f7fafc;
 }
-
 .mini.card h4 {
   margin-bottom: 0.5rem;
   color: #667eea;
   font-size: 1rem;
 }
-
 .mini.card p {
   margin-bottom: 0;
   font-size: 0.9rem;
   color: #4a5568;
 }
-
 /* === EXPERIENCE / ROLE CARDS === */
 .role.card {
   margin-bottom: 2rem;
 }
-
 .role h3 {
   color: #2d3748;
 }
-
 .role .meta {
   font-size: 0.95rem;
   color: #718096;
   margin-bottom: 1rem;
 }
-
 .role ul {
   padding-left: 1.5rem;
   margin-bottom: 1rem;
 }
-
 .role ul li {
   margin-bottom: 0.75rem;
 }
-
 /* === CONTACT SECTION === */
 .align-center {
   text-align: center;
 }
-
 /* === CHECKLIST (ABOUT SECTION) === */
 .checklist {
   list-style: none;
   padding-left: 0;
 }
-
 .checklist li {
   padding: 0.75rem 0;
   padding-left: 2rem;
   position: relative;
 }
-
 .checklist li::before {
   content: '✓';
   position: absolute;
@@ -414,7 +387,6 @@ p {
   font-weight: 700;
   font-size: 1.25rem;
 }
-
 /* === FOOTER === */
 .site-footer {
   background: #2d3748;
@@ -422,12 +394,10 @@ p {
   padding: 2rem 0;
   text-align: center;
 }
-
 .site-footer p {
   margin: 0;
   font-size: 0.9rem;
 }
-
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
   h1 { font-size: 2rem; }
@@ -462,5 +432,24 @@ p {
   
   .quick-stats {
     gap: 1.5rem;
+  }
+  
+  .profile-header {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .profile-header h1 {
+    font-size: 2rem;
+  }
+  
+  .profile-header h3 {
+    font-size: 1.125rem;
   }
 }
