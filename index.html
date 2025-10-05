@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ankita Singh | Business Analytics Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- HERO SECTION -->
@@ -25,285 +28,209 @@
       </div>
     </nav>
 
-    <div class="hero-content">
-      <img src="Profile-Photo.jpg" alt="Ankita Singh" class="profile-photo" />
-      <h1 class="headline">Turning Complex Data Into Clear Decisions</h1>
-      <p class="subheadline">Business Analyst → Data Storyteller → Strategic Problem Solver</p>
-      <p class="intro">
-        Hi, I'm Ankita Singh — a data analyst who transforms business challenges into actionable insights. With 5+ years at Deloitte and a passion for predictive analytics, I help organizations make smarter decisions through data-driven strategies.
-      </p>
-      <div class="cta-group">
-        <a href="#projects" class="btn primary">Explore My Projects</a>
-        <a href="resume.pdf" class="btn" target="_blank" rel="noopener">Download Resume</a>
-        <a href="#contact" class="btn outline">Let's Connect</a>
+    <div class="hero-content container">
+      <div class="profile-card card">
+        <img src="Profile-Photo.jpg" alt="Ankita Singh" class="profile-photo" />
+        <div class="profile-meta">
+          <h1 class="headline">Turning Complex Data Into Clear Decisions</h1>
+          <p class="subheadline">Business Analyst → Data Storyteller → Strategic Problem Solver</p>
+          <p class="intro">Hi, I'm Ankita — I transform business challenges into actionable insights. With 5+ years at Deloitte and a passion for predictive analytics, I help organizations make smarter decisions through data-driven strategies.</p>
+          <div class="cta-group">
+            <a class="btn primary" href="#projects">Explore My Projects</a>
+            <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+            <a class="btn outline" href="#contact">Let's Connect</a>
+          </div>
+          <ul class="quick-stats">
+            <li><span>5+ YEARS</span> Experience</li>
+            <li><span>$2M+</span> Projects Managed</li>
+            <li><span>20% AVG</span> Cost Reduction</li>
+            <li><span>3</span> Industries</li>
+          </ul>
+        </div>
       </div>
-      <ul class="quick-stats">
-        <li><strong>5+ YEARS</strong><span>Experience</span></li>
-        <li><strong>$2M+ VALUE</strong><span>Projects Managed</span></li>
-        <li><strong>20% AVG</strong><span>Cost Reduction</span></li>
-        <li><strong>3 INDUSTRIES</strong><span>Mastered</span></li>
-      </ul>
     </div>
   </header>
 
-  <!-- ABOUT ME SECTION -->
-  <section id="about" class="section about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I'm a data analyst who believes the best insights come from asking better questions. I don't just analyze data — I translate it into stories that drive business strategy and measurable results.
-      </p>
-      <p>
-        My career started in telecommunications engineering, but I quickly discovered my passion for solving business problems through data. Over the past 5 years at Deloitte Consulting and fintech startups, I've partnered with enterprise clients like Walmart and state governments to modernize financial systems, optimize product performance, and deliver millions in cost savings.
-      </p>
-      <p>
-        Currently pursuing my Master's in Business Analytics at Northeastern University (3.9 GPA), where I'm deepening expertise in machine learning, predictive modeling, and advanced statistical analysis. I'm particularly focused on applications in financial services — from fraud detection to customer segmentation to KPI optimization.
-      </p>
-      <p>
-        I bridge the gap between business and technology. I speak fluent SQL and Python, but I also speak stakeholder. I've led Agile sprints, authored requirements documentation, and presented insights to C-suite executives. I turn messy data into polished dashboards and complex analyses into clear recommendations.
-      </p>
-      <p>
-        Beyond work, you'll find me exploring Boston's coffee shops, experimenting with visualization techniques, or diving into the latest trends in AI. I'm always learning, always curious, and always ready for the next challenge.
-      </p>
-
-      <div class="timeline">
-        <div class="timeline-group">
-          <h3>2017–2020 | Foundation Years</h3>
-          <ul>
-            <li>Telecom Engineering background</li>
-            <li>Transitioned to Business Analysis</li>
-            <li>Discovered passion for data</li>
-          </ul>
-        </div>
-        <div class="timeline-group">
-          <h3>2020–2021 | Startup Experience</h3>
-          <ul>
-            <li>Quality Business Analyst @ Certify Global</li>
-            <li>Built OnePay payment gateway from scratch</li>
-            <li>200% faster device certification cycles</li>
-            <li>Won Rockstar Award</li>
-          </ul>
-        </div>
-        <div class="timeline-group">
-          <h3>2022–2024 | Enterprise Consulting</h3>
-          <ul>
-            <li>Business Analyst @ Deloitte</li>
-            <li>Served Walmart, State of Michigan, State of Colorado</li>
-            <li>Led $2M+ project portfolios</li>
-            <li>Delivered 20% cost reduction through data modernization</li>
-            <li>Won 2× Applause Awards</li>
-          </ul>
-        </div>
-        <div class="timeline-group">
-          <h3>2024–2025 | Advanced Analytics</h3>
-          <ul>
-            <li>MS Business Analytics @ Northeastern (3.9 GPA)</li>
-            <li>Specialization: Predictive Analytics, ML, Financial Data</li>
-            <li>Building portfolio of advanced analytics projects</li>
-            <li>Seeking Data Analyst roles in Financial Services</li>
-          </ul>
-        </div>
+  <!-- ABOUT SECTION (Card layout) -->
+  <section id="about" class="section">
+    <div class="container grid-2">
+      <div class="card padded">
+        <h2>About Me</h2>
+        <p>I'm a data analyst who believes the best insights come from asking better questions. I translate data into stories that drive business strategy and measurable results.</p>
+        <p>My career began in telecom engineering, but I quickly moved into business analysis and analytics. I've partnered with enterprise clients like Walmart and state governments to modernize financial systems, optimize product performance, and deliver millions in savings.</p>
+        <p>I'm pursuing an MS in Business Analytics at Northeastern (GPA 3.9). Focus areas: predictive modeling, ML, and financial data analytics.</p>
       </div>
-
-      <div class="why-me">
-        <div class="card">
-          <h4>Business Acumen</h4>
-          <p>5+ years translating business needs into technical requirements. I understand what executives need and how to deliver it.</p>
-        </div>
-        <div class="card">
-          <h4>Technical Depth</h4>
-          <p>Advanced SQL, Python, and statistical modeling. From complex queries to predictive models.</p>
-        </div>
-        <div class="card">
-          <h4>Results-Driven</h4>
-          <p>Every project delivers measurable impact. I focus on outcomes, not just outputs.</p>
+      <div class="card padded">
+        <h3>Why work with me</h3>
+        <ul class="checklist">
+          <li><strong>Business Acumen:</strong> 5+ years turning strategy into measurable outcomes</li>
+          <li><strong>Technical Depth:</strong> SQL, Python, ML, data modeling, and visualization</li>
+          <li><strong>Outcome-Focused:</strong> Every project tied to KPIs and ROI</li>
+        </ul>
+        <div class="timeline-minicards">
+          <div class="mini card">
+            <h4>2017–2020</h4>
+            <p>Transition from Telecom Engg to Business Analytics</p>
+          </div>
+          <div class="mini card">
+            <h4>2020–2021</h4>
+            <p>Startup: OnePay gateway, 200% faster certification</p>
+          </div>
+          <div class="mini card">
+            <h4>2022–2024</h4>
+            <p>Deloitte: $2M+ portfolio, 20% cost reduction</p>
+          </div>
+          <div class="mini card">
+            <h4>2024–2025</h4>
+            <p>MSBA @ Northeastern, focus on ML for Finance</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SKILLS SECTION -->
-  <section id="skills" class="section skills">
+  <section id="skills" class="section">
     <div class="container">
       <h2>Technical Toolkit</h2>
       <p class="subtitle">What I bring to the table</p>
-
       <div class="skills-grid">
-        <div class="skill-group">
+        <div class="card">
           <h3>Data Analysis & Programming</h3>
           <ul>
-            <li><strong>SQL (Advanced)</strong> — Window functions, CTEs, stored procedures | Snowflake, BigQuery, Oracle, MySQL</li>
-            <li><strong>Python</strong> — Pandas, NumPy, scikit-learn, Matplotlib, Seaborn (EDA, ML, viz)</li>
-            <li><strong>R</strong> — Regression, clustering, ggplot2 (advanced statistics, research)</li>
-            <li><strong>Statistical Analysis</strong> — Hypothesis testing, regression, clustering, time series</li>
+            <li>SQL (Window functions, CTEs, procedures) — Snowflake, BigQuery, Oracle</li>
+            <li>Python — Pandas, scikit-learn, Matplotlib, Seaborn</li>
+            <li>R — Regression, clustering, ggplot2</li>
+            <li>Statistics — Hypothesis tests, regression, time series</li>
           </ul>
         </div>
-        <div class="skill-group">
-          <h3>Visualization & Business Intelligence</h3>
+        <div class="card">
+          <h3>Visualization & BI</h3>
           <ul>
-            <li><strong>Tableau</strong> — Interactive dashboards, LOD, storytelling</li>
-            <li><strong>Power BI</strong> — DAX, data modeling, KPI tracking</li>
-            <li><strong>Excel (Advanced)</strong> — Modeling, Solver, VBA</li>
+            <li>Tableau — Interactive dashboards, LOD, storytelling</li>
+            <li>Power BI — DAX, modeling, KPI tracking</li>
+            <li>Excel (Advanced) — Modeling, Solver, VBA</li>
           </ul>
         </div>
-        <div class="skill-group">
-          <h3>Cloud & Database Platforms</h3>
+        <div class="card">
+          <h3>Cloud & Data</h3>
           <ul>
-            <li>Snowflake, BigQuery (DW, optimization)</li>
-            <li>AWS basics: S3, EC2, RDS</li>
+            <li>Snowflake, BigQuery</li>
+            <li>AWS: S3, EC2, RDS (basics)</li>
           </ul>
         </div>
-        <div class="skill-group">
-          <h3>Business Analysis & Product</h3>
+        <div class="card">
+          <h3>Business & Product</h3>
           <ul>
-            <li>Requirements (BRD, FRD, STTM), User Stories, Epics</li>
+            <li>Requirements (BRD/FRD), user stories, epics</li>
             <li>Product analytics, KPI design, A/B testing</li>
-            <li>Process analysis (AS-IS/TO-BE, BPMN, swimlanes)</li>
+            <li>Process modeling (BPMN, swimlanes)</li>
             <li>Agile/Scrum leadership</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>Tools</h3>
-          <ul>
-            <li>Jira, Confluence, Azure DevOps, Smartsheet, Trello</li>
-            <li>Postman (API testing), QA/UAT coordination</li>
-            <li>Wireframing, process flows, UX collaboration</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FEATURED PROJECTS SECTION -->
-  <section id="projects" class="section projects">
+  <!-- PROJECTS SECTION (Card highlights) -->
+  <section id="projects" class="section">
     <div class="container">
       <h2>Featured Projects</h2>
       <p class="subtitle">Real-world problems. Data-driven solutions.</p>
+      <div class="project-grid">
+        <article class="project card">
+          <h3>Fraud Detection Analytics Dashboard</h3>
+          <p class="tags">#Python #Tableau #MachineLearning #FinancialAnalytics #EDA</p>
+          <ul class="stats">
+            <li>500+ Transactions analyzed</li>
+            <li>3 high-risk patterns identified</li>
+            <li>87% detection accuracy</li>
+            <li>5 actionable recommendations</li>
+          </ul>
+          <p>Built an interactive fraud detection system analyzing 500+ bank transactions to uncover ATM vulnerabilities, high-risk demographics, and transaction behaviors. Combined EDA with ML to deliver security recommendations.</p>
+        </article>
 
-      <article class="project">
-        <h3>Fraud Detection Analytics Dashboard</h3>
-        <p class="tags">#Python #Tableau #MachineLearning #FinancialAnalytics #EDA</p>
-        <ul class="stats">
-          <li>500+ Transactions Analyzed</li>
-          <li>3 High-Risk Patterns Identified</li>
-          <li>87% Fraud Detection Accuracy</li>
-          <li>5 Actionable Recommendations</li>
-        </ul>
-        <p>
-          Built an interactive fraud detection system analyzing 500+ bank transactions to identify vulnerabilities in ATM usage patterns, high-risk demographics, and transaction behaviors. Combined EDA with machine learning to deliver actionable security recommendations.
-        </p>
-        <h4>Approach</h4>
-        <ol>
-          <li>Exploratory Data Analysis in Python (temporal, geographic, behavioral patterns)</li>
-          <li>Statistical tests (hypothesis testing, correlations, chi-square)</li>
-          <li>Models: Logistic Regression, Random Forest, XGBoost → 87% accuracy</li>
-          <li>Tableau dashboard with trends, heatmaps, type analysis, risk profiles</li>
-        </ol>
-        <h4>Business Impact</h4>
+        <article class="project card">
+          <h3>Walmart Financial Reporting Modernization</h3>
+          <p class="tags">#SQL #Snowflake #BigQuery #PowerBI #Enterprise</p>
+          <ul class="stats">
+            <li>50+ reports consolidated</li>
+            <li>20% cost reduction</li>
+            <li>1000+ end users</li>
+            <li>99% data accuracy</li>
+          </ul>
+          <p>Led modernization of financial reporting, consolidating AP/AR and tax reports into a centralized cloud system with cost savings and improved compliance.</p>
+        </article>
+
+        <article class="project card">
+          <h3>Customer Churn Prediction Model</h3>
+          <p class="tags">#R #LogisticRegression #PredictiveAnalytics</p>
+          <ul class="stats">
+            <li>85% prediction accuracy</li>
+            <li>5 key churn indicators</li>
+            <li>3-month early warning</li>
+          </ul>
+          <p>Built a logistic regression model with engineered features and robust validation to identify at-risk customers and drive retention strategy.</p>
+        </article>
+
+        <article class="project card">
+          <h3>Employment & Wage Trends Analysis</h3>
+          <p class="tags">#Python #KMeans #PolicyResearch</p>
+          <ul class="stats">
+            <li>10,000+ records analyzed</li>
+            <li>4 workforce segments identified</li>
+            <li>15+ statistical tests</li>
+          </ul>
+          <p>Comprehensive workforce analysis to identify employment patterns, wage disparities, and policy impacts, informing development programs.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION (kept concise) -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Professional Experience</h2>
+      <article class="role card">
+        <h3>Deloitte Consulting — Business Analyst</h3>
+        <p class="meta">Jan 2022 – Aug 2024 • Bangalore, India</p>
         <ul>
-          <li>Identified $47K in potentially fraudulent transactions</li>
-          <li>Reduced false positives by 23% vs. rule-based system</li>
-          <li>Framework for real-time fraud scoring</li>
+          <li>Enterprise transformation projects valued at $2M+, specializing in financial systems and analytics</li>
+          <li>Consolidated 50+ reports; 20% cost reduction; 30% faster decisions; 99% accuracy</li>
+          <li>Agile leadership, stakeholder management, and KPI dashboards in Power BI</li>
         </ul>
+        <p class="meta">Awards: 2× Applause Awards</p>
       </article>
 
-      <article class="project">
-        <h3>Walmart Financial Reporting Modernization</h3>
-        <p class="tags">#SQL #Snowflake #BigQuery #PowerBI #Enterprise</p>
-        <ul class="stats">
-          <li>50+ Reports Consolidated</li>
-          <li>20% Cost Reduction</li>
-          <li>1000+ End Users</li>
-          <li>99% Data Accuracy</li>
-        </ul>
-        <p>
-          Led modernization of Walmart's financial reporting infrastructure, consolidating fragmented AP/AR and tax reports into a centralized, cloud-based system with significant cost savings and improved compliance accuracy.
-        </p>
-        <h4>Role & Outcomes</h4>
+      <article class="role card">
+        <h3>Certify Global Inc. — Quality Business Analyst</h3>
+        <p class="meta">Feb 2020 – Nov 2021 • Bangalore, India</p>
         <ul>
-          <li>Designed DW architecture and STTM for 200+ elements</li>
-          <li>Optimized SQL (45 min → 3 min), created 50+ reusable views</li>
-          <li>Built Power BI executive dashboards and self-service analytics</li>
-          <li>Results: 20% cost reduction, 30% faster decisions, 99% accuracy</li>
-        </ul>
-      </article>
-
-      <article class="project">
-        <h3>Customer Churn Prediction Model</h3>
-        <p class="tags">#R #LogisticRegression #PredictiveAnalytics</p>
-        <ul class="stats">
-          <li>85% Prediction Accuracy</li>
-          <li>5 Key Churn Indicators</li>
-          <li>3-Month Early Warning</li>
-        </ul>
-        <p>
-          Developed a logistic regression model to identify customers at risk of churning 3 months in advance. Included engineered features, interaction effects, and robust validation.
-        </p>
-        <h4>Highlights</h4>
-        <ul>
-          <li>Top predictors: Engagement score, support tickets, contract type</li>
-          <li>Actions: Onboarding program, retention pricing, risk scoring dashboard</li>
-          <li>Expected ROI: 351% under conservative assumptions</li>
-        </ul>
-      </article>
-
-      <article class="project">
-        <h3>Employment & Wage Trends Analysis</h3>
-        <p class="tags">#Python #LogisticRegression #KMeans #PolicyResearch</p>
-        <ul class="stats">
-          <li>10,000+ Records Analyzed</li>
-          <li>4 Workforce Segments Identified</li>
-          <li>15+ Statistical Tests</li>
-        </ul>
-        <p>
-          Comprehensive workforce analysis to identify employment patterns, wage disparities, and policy impacts. Delivered data-driven recommendations for workforce development.
-        </p>
-        <h4>Highlights</h4>
-        <ul>
-          <li>Education and skills training drive employment and wages</li>
-          <li>Evidence-based policies (childcare, training) show strong ROI</li>
-          <li>Targeted interventions for service workers and disconnected groups</li>
+          <li>Led OnePay payment gateway; 200% faster device certification</li>
+          <li>Launched solution serving 200+ merchants; $25M+ processed in Year 1</li>
+          <li>Built QA function with 500+ regression tests; 99.7% uptime</li>
         </ul>
       </article>
     </div>
   </section>
 
-  <!-- PROFESSIONAL EXPERIENCE SECTION -->
-  <section id="experience" class="section experience">
+  <!-- CONTACT / CTA FOOTER -->
+  <section id="contact" class="section">
+    <div class="container card padded align-center">
+      <h2>Let's build something great</h2>
+      <p>Open to Data Analyst roles in Financial Services and Analytics-driven teams.</p>
+      <div class="cta-group">
+        <a class="btn primary" href="mailto:asingh0410@gmail.com">Email Me</a>
+        <a class="btn outline" href="https://www.linkedin.com/in/ankita-singh-" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="#projects">View Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
     <div class="container">
-      <h2>Professional Experience</h2>
-
-      <article class="role">
-        <h3>Deloitte Consulting — Business Analyst</h3>
-        <p class="meta">Jan 2022 – Aug 2024 | Bangalore, India</p>
-        <p>
-          Delivered data-driven solutions for Fortune 500 clients and government agencies, leading enterprise transformation projects valued at $2M+. Specialized in financial systems modernization, product analytics, and process optimization using SQL, Python, and cloud platforms.
-        </p>
-        <h4>Key Projects</h4>
-        <ul>
-          <li>Walmart CILL — Consolidated 50+ reports; 20% cost reduction; 30% faster decisions; 99% accuracy</li>
-          <li>Michigan UI — Claims processing 21 → 7 days; 35% fewer false fraud flags; 99.2% accuracy</li>
-          <li>Colorado UI — Accelerated timeline, enhanced fraud detection; 92% user satisfaction</li>
-        </ul>
-        <h4>Responsibilities</h4>
-        <ul>
-          <li>Requirements elicitation (BRD, FRD, STTM), AS-IS/TO-BE modeling, gap analysis</li>
-          <li>DW design, SQL optimization, data validation; Power BI KPI dashboards</li>
-          <li>Agile leadership: sprint ceremonies, backlog grooming, stakeholder management</li>
-          <li>UAT coordination, training, and change management for 1000+ end users</li>
-        </ul>
-        <p class="meta">Awards: 2× Applause Awards</p>
-      </article>
-
-      <article class="role">
-        <h3>Certify Global Inc. — Quality Business Analyst</h3>
-        <p class="meta">Feb 2020 – Nov 2021 | Bangalore, India</p>
-        <p>
-          Built fintech payment solutions in a fast-paced startup. Led product lifecycle for OnePay gateway, managing certification of payment devices and delivering scalable payment solutions for enterprise clients.
-        </p>
-        <h4>Highlights</h4>
-        <ul>
-          <li>Device certification cycles 8 weeks → 2.5 weeks (200% faster)</li>
-          <li>Launched OnePay serving 200+ merchants; $25M+ processed in Year 1</li>
-          <li>Built QA function, 500+ regression tests, 99.7% uptime</li>
-          <li>Client demos, training, and documentation; 4.6/5 merchant satisfaction</
+      <p>© 2025 Ankita Singh. Built with HTML & CSS. Deployed via GitHub Pages.</p>
+    </div>
+  </footer>
+</body>
+</html>
