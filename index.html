@@ -10,6 +10,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- PROFILE PHOTO SECTION -->
+  <div class="profile-header">
+    <img class="profile-pic" src="Profile-Photo.jpg" alt="Ankita Singh Photo" />
+    <div>
+      <h1>Ankita Singh</h1>
+      <h3>Business Analytics Portfolio</h3>
+    </div>
+  </div>
+
   <!-- HERO SECTION -->
   <header id="hero" class="hero">
     <nav class="navbar">
@@ -27,7 +36,6 @@
         </ul>
       </div>
     </nav>
-
     <div class="hero-content container">
       <div class="profile-card card">
         <img src="Profile-Photo.jpg" alt="Ankita Singh" class="profile-photo" />
@@ -36,21 +44,20 @@
           <p class="subheadline">Business Analyst → Data Storyteller → Strategic Problem Solver</p>
           <p class="intro">Hi, I'm Ankita — I transform business challenges into actionable insights. With 5+ years at Deloitte and a passion for predictive analytics, I help organizations make smarter decisions through data-driven strategies.</p>
           <div class="cta-group">
-            <a class="btn primary" href="#projects">Explore My Projects</a>
-            <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
-            <a class="btn outline" href="#contact">Let's Connect</a>
+            <a href="#projects" class="btn primary">Explore My Projects</a>
+            <a href="resume.pdf" class="btn" target="_blank" rel="noopener">Download Resume</a>
+            <a href="#contact" class="btn outline">Let's Connect</a>
           </div>
           <ul class="quick-stats">
-            <li><span>5+ YEARS</span> Experience</li>
-            <li><span>$2M+</span> Projects Managed</li>
-            <li><span>20% AVG</span> Cost Reduction</li>
-            <li><span>3</span> Industries</li>
+            <li>5+ YEARS Experience</li>
+            <li>$2M+ Projects Managed</li>
+            <li>20% AVG Cost Reduction</li>
+            <li>3 Industries</li>
           </ul>
         </div>
       </div>
     </div>
   </header>
-
   <!-- ABOUT SECTION (Card layout) -->
   <section id="about" class="section">
     <div class="container grid-2">
@@ -61,34 +68,33 @@
         <p>I'm pursuing an MS in Business Analytics at Northeastern (GPA 3.9). Focus areas: predictive modeling, ML, and financial data analytics.</p>
       </div>
       <div class="card padded">
-        <h3>Why work with me</h3>
+        <h2>Why work with me</h2>
         <ul class="checklist">
-          <li><strong>Business Acumen:</strong> 5+ years turning strategy into measurable outcomes</li>
-          <li><strong>Technical Depth:</strong> SQL, Python, ML, data modeling, and visualization</li>
-          <li><strong>Outcome-Focused:</strong> Every project tied to KPIs and ROI</li>
+          <li>Business Acumen: 5+ years turning strategy into measurable outcomes</li>
+          <li>Technical Depth: SQL, Python, ML, data modeling, and visualization</li>
+          <li>Outcome-Focused: Every project tied to KPIs and ROI</li>
         </ul>
         <div class="timeline-minicards">
           <div class="mini card">
-            <h4>2017–2020</h4>
+            <strong>2017–2020</strong>
             <p>Transition from Telecom Engg to Business Analytics</p>
           </div>
           <div class="mini card">
-            <h4>2020–2021</h4>
+            <strong>2020–2021</strong>
             <p>Startup: OnePay gateway, 200% faster certification</p>
           </div>
           <div class="mini card">
-            <h4>2022–2024</h4>
+            <strong>2022–2024</strong>
             <p>Deloitte: $2M+ portfolio, 20% cost reduction</p>
           </div>
           <div class="mini card">
-            <h4>2024–2025</h4>
+            <strong>2024–2025</strong>
             <p>MSBA @ Northeastern, focus on ML for Finance</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <!-- SKILLS SECTION -->
   <section id="skills" class="section">
     <div class="container">
@@ -131,7 +137,6 @@
       </div>
     </div>
   </section>
-
   <!-- PROJECTS SECTION (Card highlights) -->
   <section id="projects" class="section">
     <div class="container">
@@ -149,7 +154,6 @@
           </ul>
           <p>Built an interactive fraud detection system analyzing 500+ bank transactions to uncover ATM vulnerabilities, high-risk demographics, and transaction behaviors. Combined EDA with ML to deliver security recommendations.</p>
         </article>
-
         <article class="project card">
           <h3>Walmart Financial Reporting Modernization</h3>
           <p class="tags">#SQL #Snowflake #BigQuery #PowerBI #Enterprise</p>
@@ -161,7 +165,6 @@
           </ul>
           <p>Led modernization of financial reporting, consolidating AP/AR and tax reports into a centralized cloud system with cost savings and improved compliance.</p>
         </article>
-
         <article class="project card">
           <h3>Customer Churn Prediction Model</h3>
           <p class="tags">#R #LogisticRegression #PredictiveAnalytics</p>
@@ -172,7 +175,6 @@
           </ul>
           <p>Built a logistic regression model with engineered features and robust validation to identify at-risk customers and drive retention strategy.</p>
         </article>
-
         <article class="project card">
           <h3>Employment & Wage Trends Analysis</h3>
           <p class="tags">#Python #KMeans #PolicyResearch</p>
@@ -186,7 +188,6 @@
       </div>
     </div>
   </section>
-
   <!-- EXPERIENCE SECTION (kept concise) -->
   <section id="experience" class="section">
     <div class="container">
@@ -201,7 +202,6 @@
         </ul>
         <p class="meta">Awards: 2× Applause Awards</p>
       </article>
-
       <article class="role card">
         <h3>Certify Global Inc. — Quality Business Analyst</h3>
         <p class="meta">Feb 2020 – Nov 2021 • Bangalore, India</p>
@@ -213,20 +213,18 @@
       </article>
     </div>
   </section>
-
   <!-- CONTACT / CTA FOOTER -->
   <section id="contact" class="section">
     <div class="container card padded align-center">
       <h2>Let's build something great</h2>
       <p>Open to Data Analyst roles in Financial Services and Analytics-driven teams.</p>
       <div class="cta-group">
-        <a class="btn primary" href="mailto:asingh0410@gmail.com">Email Me</a>
-        <a class="btn outline" href="https://www.linkedin.com/in/ankita-singh-" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="#projects">View Projects</a>
+        <a href="mailto:asingh0410@gmail.com" class="btn primary">Email Me</a>
+        <a href="https://www.linkedin.com/in/ankita-singh-" class="btn outline" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#projects" class="btn">View Projects</a>
       </div>
     </div>
   </section>
-
   <footer class="site-footer">
     <div class="container">
       <p>© 2025 Ankita Singh. Built with HTML & CSS. Deployed via GitHub Pages.</p>
